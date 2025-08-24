@@ -162,7 +162,7 @@
     <textarea rows="4" placeholder="Ihre Nachricht"></textarea>
     <button type="submit">Absenden</button>
   </form>
-  <a class="whatsapp" href="https://wa.me/491701234567" target="_blank">📲 WhatsApp Nachricht senden</a>
+  <a class="whatsapp" href="https://wa.me/4915739874709" target="_blank">📲 WhatsApp Nachricht senden</a>
 </section>
 
 <footer>
@@ -171,3 +171,4 @@
 
 </body>
 </html>
+
