@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Sonnenschein</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 10px 0 20px;
+    }
+    header a {
+      background: #e67e22;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #e67e22;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .menu-item {
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      background: #fafafa;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .menu-item h3 {
+      margin: 0 0 10px;
+    }
+    .zeiten, .kontakt {
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 12px;
+    }
+    form {
+      display: grid;
+      gap: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea, button {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    button {
+      background: #e67e22;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .whatsapp {
+      display: block;
+      margin: 20px auto;
+      background: #25D366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      width: fit-content;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Café Sonnenschein</h1>
+  <p>Frischer Kaffee & hausgemachte Kuchen</p>
+  <a href="#menu">Unsere Speisekarte</a>
+</header>
+
+<section id="menu">
+  <h2>Unsere Speisekarte</h2>
+  <div class="menu">
+    <div class="menu-item">
+      <h3>Cappuccino</h3>
+      <p>Cremig & stark</p>
+      <p><b>2,80 €</b></p>
+    </div>
+    <div class="menu-item">
+      <h3>Latte Macchiato</h3>
+      <p>Mit frischer Milch</p>
+      <p><b>3,20 €</b></p>
+    </div>
+    <div class="menu-item">
+      <h3>Hausgemachter Käsekuchen</h3>
+      <p>Nach Omas Rezept</p>
+      <p><b>3,50 €</b></p>
+    </div>
+    <div class="menu-item">
+      <h3>Schoko-Muffin</h3>
+      <p>Mit Schokostückchen</p>
+      <p><b>2,00 €</b></p>
+    </div>
+  </div>
+</section>
+
+<section class="zeiten">
+  <h2>Öffnungszeiten</h2>
+  <p>Montag – Freitag: 8:00 – 18:00 Uhr</p>
+  <p>Samstag & Sonntag: 9:00 – 16:00 Uhr</p>
+</section>
+
+<section>
+  <h2>So findest du uns</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.337627495996!2d2.352221315674316!3d48.856614079287846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d8772f4b2d%3A0x6b9bb69e5f2a8c7c!2sParis!5e0!3m2!1sde!2sde!4v1630418783981!5m2!1sde!2sde" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section class="kontakt">
+  <h2>Kontakt</h2>
+  <form>
+    <input type="text" placeholder="Ihr Name" required>
+    <input type="email" placeholder="Ihre E-Mail" required>
+    <textarea rows="4" placeholder="Ihre Nachricht"></textarea>
+    <button type="submit">Absenden</button>
+  </form>
+  <a class="whatsapp" href="https://wa.me/491701234567" target="_blank">📲 WhatsApp Nachricht senden</a>
+</section>
+
+<footer>
+  <p>© 2025 Café Sonnenschein | Alle Rechte vorbehalten</p>
+</footer>
+
+</body>
+</html>
